@@ -3,10 +3,10 @@ import errIcon from "./assets/images/icon-error.svg";
 
 function App() {
     const [inputStatus, setInputStatus] = useState({
-        firstName: { value: "", error: false },
-        lastName: { value: "", error: false },
-        email: { value: "", error: false },
-        password: { value: "", error: false },
+        firstName: { value: "", error: true },
+        lastName: { value: "", error: true },
+        email: { value: "", error: true },
+        password: { value: "", error: true },
     });
 
     console.log(inputStatus.firstName);
@@ -21,22 +21,22 @@ function App() {
     }
 
     return (
-        <main className="bg-[url('./assets/images/bg-intro-mobile.png')] bg-c-Red-400 w-full min-h-screen flex justify-center items-center px-6 py-24">
-            <div>
-                <section className=" mb-15">
-                    <h1 className="font-poppins-700 text-white text-3xl text-center mb-6">
+        <main className="bg-[url('./assets/images/bg-intro-mobile.png')] bg-no-repeat bg-center bg-cover bg-c-Red-400 w-full min-h-screen flex justify-center items-center px-6 py-24 md:p-24 md:bg-[url('./assets/images/bg-intro-desktop.png')]">
+            <div className="lg:flex lg:items-center lg:gap-20 w-full max-w-300">
+                <section className=" mb-15 text-center lg:w-full lg:text-left">
+                    <h1 className="font-poppins-700 text-white text-3xl mb-6 lg:text-5xl">
                         Learn to code by watching others
                     </h1>
-                    <p className="text-md font-poppins-500 text-center text-white">
+                    <p className="text-md font-poppins-500  text-white lg:text-lg">
                         {" "}
                         See how experienced developers solve problems in
                         real-time. Watching scripted tutorials is great, but
                         understanding how developers think is invaluable.
                     </p>
                 </section>
-                <section>
-                    <div className="bg-c-Purple-700 rounded-xl py-6 px-15 mb-6 shadow-p-shadow">
-                        <p className="text-white text-md text-center font-poppins-400 text-base">
+                <section className="lg:w-full">
+                    <div className="bg-c-Purple-700 rounded-xl py-6 px-15 mb-6 shadow-p-shadow lg:px-2">
+                        <p className="text-white text-md text-center font-poppins-400 text-base ">
                             <span className="font-poppins-700">
                                 Try it free 7 days
                             </span>{" "}
@@ -45,7 +45,7 @@ function App() {
                     </div>
                     <form
                         onSubmit={formValidate}
-                        className="bg-white p-6 rounded-xl flex flex-col gap-4 shadow-p-shadow"
+                        className="bg-white p-6 rounded-xl flex flex-col gap-4 shadow-p-shadow md:p-10"
                     >
                         <div className="relative">
                             <input
