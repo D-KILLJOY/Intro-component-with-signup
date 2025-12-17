@@ -50,5 +50,13 @@
 }
 
 input {
-    @apply border border-c-Purple-350/50 rounded-md p-4 w-full placeholder:font-poppins-700 placeholder:text-base outline-c-Purple-350 focus:outline-1 font-poppins-600 text-c-Gray-900;
+    @apply border border-c-Purple-350/50 rounded-md p-4 w-full placeholder:font-poppins-700 placeholder:text-base outline-c-Purple-350 focus:outline-1 font-poppins-600 text-c-Gray-900 relative pe-12;
+}
+
+.input__err {
+    @apply border-c-Red-400;
+}
+
+.error__msg {
+    @apply text-right font-poppins-600 italic text-c-Red-400/80 text-xs mt-2;
 }
