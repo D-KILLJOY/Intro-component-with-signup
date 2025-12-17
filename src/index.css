@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Poppins-400";
+    src: url("./assets/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins-500";
+    src: url("./assets/Poppins/Poppins-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins-600";
+    src: url("./assets/Poppins/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins-700";
+    src: url("./assets/Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --Red-400: hsl(0, 100%, 74%);
+    --Green-400: hsl(154, 59%, 51%);
+    --Purple-700: hsl(248, 32%, 49%);
+    --Gray-900: hsl(249, 10%, 26%);
+    --Purple-350: hsl(246, 25%, 77%);
+    --shadow-p: 0px 8px 0px 0px rgba(0, 0, 0, 0.25);
+    --shadow-g: 0px 5px 0px 0px hsl(154, 59%, 46%);
+}
+
+@theme {
+    --color-c-Red-400: var(--Red-400);
+    --color-c-Green-400: var(--Green-400);
+    --color-c-Purple-700: var(--Purple-700);
+    --color-c-Gray-900: var(--Gray-900);
+    --color-c-Purple-350: var(--Purple-350);
+    --shadow-p-shadow: var(--shadow-p);
+    --shadow-g-shadow: var(--shadow-g);
+    --font-poppins-400: "poppins-400";
+    --font-poppins-500: "poppins-500";
+    --font-poppins-600: "poppins-600";
+    --font-poppins-700: "poppins-700";
+}
+
+input {
+    @apply border border-c-Purple-350/50 rounded-md p-4 w-full placeholder:font-poppins-700 placeholder:text-base outline-c-Purple-350 focus:outline-1 font-poppins-600 text-c-Gray-900;
+}
