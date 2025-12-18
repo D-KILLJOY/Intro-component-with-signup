@@ -290,7 +290,18 @@ function App() {
                             </p>
                         </form>
                     ) : (
-                        <div></div>
+                        <div className="bg-white py-6 px-4 rounded-xl flex flex-col gap-2 text-center  md:py-10 md:px-5">
+                            <h2 className="font-poppins-700 text-c-Green-400 text-xl">
+                                Sign up Successfull!{" "}
+                            </h2>
+                            <p className="font-poppins-600 text-c-Purple-700 mb-10 text-sm">
+                                Check your email to confirm your signup.
+                            </p>
+                            <p className="font-poppins-600 text-xs text-c-Red-400 capitalize">
+                                Disclaimer: this is not a real signup, no data
+                                was collected or saved and no email was sent.
+                            </p>
+                        </div>
                     )}
                 </section>
             </div>
