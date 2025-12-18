@@ -60,3 +60,7 @@ input {
 .error__msg {
     @apply text-right font-poppins-600 italic text-c-Red-400/80 text-xs mt-2;
 }
+
+.red__text {
+    @apply text-c-Red-400;
+}
